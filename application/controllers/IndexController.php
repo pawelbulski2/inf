@@ -10,7 +10,8 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $category = new Application_Model_DbTable_Category();
+        $this->view->category = $category->getTop();
     }
 
 

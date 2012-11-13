@@ -1,1 +1,12 @@
-sprr7lokal
+<div id="index">
+    <ul>
+    <?php foreach ($this->category as $top): ?>
+        <li class="category block">
+            <a href="">
+                <span class="photo block margin0auto center"><img src="<?= $this->baseUrl('images/category/'.$top->Photo); ?>" alt="<?= $top->Name; ?>" title="<?= $top->Name; ?>"/></span>
+                <span class="name block center"><strong><?= $top->Name; ?></strong></span>
+            </a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+</div>

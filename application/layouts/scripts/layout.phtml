@@ -1,1 +1,29 @@
-<?php echo $this->layout()->content; ?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <title>Kursy online</title>
+    <meta name="keywords" content="sklep netmix, zabawki szczecin, sklep zabawkowy, zabawki dla dzieci szczecin, sklep szczecin, wszystko dla dziecka, dla chłopców, dla dziewczynek, swiat zabawek, szczecin sklep"/>
+    <meta name="description" content="Sklep internetowy netmix z siedzibą w Szczecinie ul. Willowa 5a/4 posiada zabawki edukacyjne, układanki i gry edukacyjne dla dzieci. Zabawki pomagające rozwijać się przez zabawę. Super zabawki na prezent. W ofercie handlowej posiada również akcesoria ogrodowe oraz gospodarstwa domowego. Bezpieczne zakupy internetowe, niskie ceny."/>
+    <meta name="googlebot" content="index,follow" />
+    <meta name="msnbot" content="index,follow" />
+    <meta name="Robots" content="index, follow, all" />
+    <meta name="revisit-after" content="2 days" /> 
+    <link rel="stylesheet" type="text/css" href="<?= $this->baseUrl('css/style.css'); ?>"/>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" ></script>   
+</head>
+<body> 
+    <div class="wrapper1">
+        <div class="wrapper2">
+            <?= $this->render('_header.phtml') ?>
+            <div class="wrapper3">
+                <?php echo $this->layout()->content; ?>
+            </div>
+            <?= $this->render('_footer.phtml') ?>
+        </div>
+    </div>
+</body>
+</html>
